@@ -189,8 +189,11 @@ function MindMapBlock(props) {
     }, 450);
   }
 
-  // 挂载 / 切换块：解析初始数据；空白块初始化为默认图并立即写回
+  // 挂载 / 切换块：仅当本块确为思维导图（lang=mindmap|markmap）时，才解析/初始化并写回。
+  // 关键修复：此前对「任意代码块」都会执行该副作用，若内容非合法 JSON 就回写成 ```mindmap，
+  // 导致「新建/转成代码块」被强制变成思维导图。非思维导图代码块应保持原样（<pre> 兜底）。
   useEffect(() => {
+    if (!isMindmap(props.raw)) return;
     const parsed = parseData(props.source);
     if (parsed) {
       setData(parsed);
