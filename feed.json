@@ -2,7 +2,7 @@
   {
     "id": "mindmap",
     "name": "思维导图",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "交互式思维导图，以 ```mindmap 代码块承载。",
     "author": "marknote",
     "main": "https://raw.githubusercontent.com/yoyosu-shenshi/marknote-plugins/main/plugins/plugin-mindmap.js",
