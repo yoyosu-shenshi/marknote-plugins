@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mindmap",
+    "name": "思维导图",
+    "version": "1.0.0",
+    "description": "交互式思维导图，以 ```mindmap 代码块承载。",
+    "author": "marknote",
+    "main": "https://raw.githubusercontent.com/yoyosu-shenshi/marknote-plugins/main/plugins/plugin-mindmap.js",
+    "permissions": [],
+    "tags": ["内置", "可视化"]
+  },
+  {
+    "id": "example-hello",
+    "name": "示例：Hello 插件",
+    "version": "0.1.0",
+    "description": "最小可用插件模板，演示 activate(api) 契约，供你照抄开发新插件。",
+    "author": "you",
+    "main": "https://raw.githubusercontent.com/yoyosu-shenshi/marknote-plugins/main/plugins/example-hello.js",
+    "permissions": [],
+    "tags": ["示例", "模板"]
+  }
+]
