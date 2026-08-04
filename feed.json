@@ -1,9 +1,19 @@
 [
   {
+    "id": "tasks",
+    "name": "任务管理全家桶",
+    "version": "1.0.0",
+    "description": "看板 / 四象限 / 番茄钟 / 习惯打卡 四合一。用 ```tasks-kanban、```tasks-matrix、```tasks-pomodoro、```tasks-habit 代码块各承载一种视图，数据存于块内随文档同步。",
+    "author": "marknote",
+    "main": "https://raw.githubusercontent.com/yoyosu-shenshi/marknote-plugins/main/plugins/plugin-tasks.js",
+    "permissions": [],
+    "tags": ["任务", "待办", "效率", "番茄钟", "打卡"]
+  },
+  {
     "id": "mindmap",
     "name": "思维导图",
-    "version": "1.0.1",
-    "description": "交互式思维导图，以 ```mindmap 代码块承载。",
+    "version": "1.0.2",
+    "description": "交互式思维导图，以 ```mindmap 代码块承载。已升级为 fence 路由注册，可与任务管理等插件共存。",
     "author": "marknote",
     "main": "https://raw.githubusercontent.com/yoyosu-shenshi/marknote-plugins/main/plugins/plugin-mindmap.js",
     "permissions": [],
