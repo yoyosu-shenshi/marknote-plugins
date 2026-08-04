@@ -603,7 +603,8 @@ function MindMapBlock(props) {
 export function activate(api) {
   API = api;
   api.log("思维导图插件已激活");
-  api.registerBlockRenderer("code", MindMapBlock);
+  // fence 路由：仅接管 ```mindmap 围栏的 code 块，与其他插件（如任务管理）共存
+  api.registerBlockRenderer("code", MindMapBlock, "mindmap");
   return {
     deactivate() {
       api.log("思维导图插件已停用");
